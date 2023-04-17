@@ -19,6 +19,30 @@ header {
 
 
 main {
+    background-color: #d48f38;
+
+    .container {
+        background-color: white;
+        padding: 40px;
+    }
+    .form-select {
+        width: 10%;
+        margin: 20px 0;
+    }
+
+    .found {
+        background-color:#212529 ;
+        height: 50px;
+        color: white;
+
+    }
+    .row {
+        margin-top: -10px;
+    }
+
+
+
+
     .imgCards {
         max-width: 100%;
     }

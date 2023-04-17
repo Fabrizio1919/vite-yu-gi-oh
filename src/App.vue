@@ -44,7 +44,16 @@ export default {
   <AppHeader></AppHeader>
 
   <main>
+    <select class="form-select" aria-label="Default select example">
+      <option selected>Alien</option>
+      <option value="1"></option>
+      <option value="2"></option>
+      <option value="3"></option>
+    </select>
     <div class="container">
+      <div class="found">
+        <h5>Found card</h5>
+      </div>
       <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5">
         <div class="col colTotal" v-for="card in cards">
           <div class="cards">
