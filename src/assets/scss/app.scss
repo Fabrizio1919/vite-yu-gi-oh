@@ -1,1 +1,40 @@
 @use '../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+header {
+    .imgLogo {
+        max-width: 100%;
+        height: 50px;
+        padding-left: 2rem;
+
+    }
+
+    .textlogo {
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+        font-size: 1.5rem;
+    }
+}
+
+
+main {
+    .imgCards {
+        max-width: 100%;
+    }
+
+    .colTotal {
+        margin: 10px 0;
+    }
+
+    .textCard {
+        height: 100px;
+        object-fit: cover;
+        background-color: #d48f38;
+        text-align: center;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
