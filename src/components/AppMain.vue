@@ -2,6 +2,7 @@
 import { store } from '../assets/data/store'
 import CardsNumber from '../components/CardsNumber.vue'
 import CardsList from './CardsList.vue';
+import FilterComponent from "../components/FilterComponet.vue"
 export default {
     name: "AppMain",
     data() {
@@ -11,19 +12,16 @@ export default {
     },
     components: {
         CardsList,
-        CardsNumber
+        CardsNumber,
+        FilterComponent
+
     }
 }
 </script>
 
 <template>
     <main>
-        <select class="form-select" aria-label="Default select example">
-            <option selected>Alien</option>
-            <option value="1"></option>
-            <option value="2"></option>
-            <option value="3"></option>
-        </select>
+        <FilterComponent v-if="store.cards != []" :cards="store.cards"></FilterComponent>
         <div class="container">
             <CardsNumber></CardsNumber>
             <CardsList></CardsList>
