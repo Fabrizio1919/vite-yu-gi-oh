@@ -12,23 +12,6 @@ export default {
             store
         }
     },
-    methods: {
-    calApi() {
-      axios
-        .get(store.API_URL)
-        .then(response => {
-          console.log(response.data.data);
-          store.cards= response.data.data;
-          store.loading = false
-        })
-        .catch(err => {
-          console.error(err.message)
-        })
-    }
-  },
-  mounted() {
-    this.calApi()
-  }
 
 }
 
